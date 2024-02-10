@@ -226,9 +226,10 @@ textarea {
     }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
     body {
         height: 100vh;
+        width: 100%;
         overflow-y: hidden;
         overflow-y: visible;
     }
@@ -251,13 +252,14 @@ textarea {
 
     #adicionar_texto{
         height: 48px;
+        width: 80%;
         text-align: left;
         margin-left: 16px;
     }
 
     #adicionar__conteudo {
         height: 50vh;
-        width: 100%;
+        width: 90%;
         align-items: center;
     }
 
@@ -285,10 +287,13 @@ textarea {
         align-items: center;
         gap: 8px;
     }
+    #criptografa__texto, #descriptografa__texto {
+        width: 90%;
+    }
 
     .decodificador {
         gap: 24px;
-        width: 327px;
+        width: 80%;
         height: auto;
         min-height: 100%;
         border-radius: 32px;
@@ -313,5 +318,9 @@ textarea {
         /* Altura mínima */
         overflow-y: hidden;
         /* Esconde a barra de rolagem */
+    }
+
+    #copia{
+        width: 100%;
     }
 }
