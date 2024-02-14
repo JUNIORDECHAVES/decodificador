@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Inter", sans-serif;
     background: #F3F5FC;
-    overflow-y: hidden;
+
 
 }
 
@@ -51,6 +51,9 @@ body {
 
 span {
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: rgba(73, 80, 87, 1);
     padding-bottom: 12px;
 }
@@ -153,6 +156,34 @@ textarea {
 
 #decodificador_texto::placeholder {
     color: rgba(73, 80, 87, 1);
+}
+
+.rodape {
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px 0 ;
+}
+
+.rodape__lista{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 8px;
+
+    
+}
+
+.rodape__links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.redape__credito{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -322,5 +353,11 @@ textarea {
 
     #copia{
         width: 100%;
+    }
+
+    .rodape__links{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
     }
 }
