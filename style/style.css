@@ -31,7 +31,7 @@ body {
 
 #adicionar_texto {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     border: none;
     color: rgba(10, 56, 113, 1);
     background: none;
