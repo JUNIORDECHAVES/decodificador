@@ -36,7 +36,6 @@ body {
     color: rgba(10, 56, 113, 1);
     background: none;
     outline: none;
-    height: 80%;
 }
 
 #adicionar_texto::placeholder {
