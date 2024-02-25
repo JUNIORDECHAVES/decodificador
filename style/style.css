@@ -123,6 +123,7 @@ h2 {
 }
 
 #decodificador_texto {
+    padding: 10px;
     font-size: 1rem;
     text-align: center;
     border: none;
@@ -180,7 +181,7 @@ textarea {
     list-style: none;
 }
 
-.redape__credito{
+.rodape__credito{
     text-align: center;
     font-size: 1.5rem;
 }
@@ -209,6 +210,10 @@ textarea {
         justify-content: flex-start;
     }
 
+    #adicionar_texto{
+        width: 100%;
+    }
+
     #adicionar__conteudo {
         align-items: flex-start;
         height: 50vh;
@@ -226,12 +231,13 @@ textarea {
         justify-content: space-between;
         gap: 24px;
         width: 668px;
-        height: 10%;
+        height: auto;
         border-radius: 32px;
         margin-bottom: 80px;
     }
 
-    h2{
+    #subtitulo {
+        padding: 0;
         font-size: 1.5rem;
     }
 
@@ -247,13 +253,14 @@ textarea {
         background: none;
         outline: none;
         line-height: 1.5rem;
-        height: auto;
-        /* Altura automática */
-        min-height: 100px;
-        /* Altura mínima */
-        overflow-y: hidden;
-        /* Esconde a barra de rolagem */
+        min-width: 100%;
+
     }
+
+    .rodape__credito{
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -334,6 +341,10 @@ textarea {
         display: none;
     }
 
+    #subtitulo {
+        padding: 0;
+    }
+
     #decodificador_texto {
         font-size: 1rem;
         text-align: center;
@@ -341,13 +352,8 @@ textarea {
         color: rgba(73, 80, 87, 1);
         background: none;
         outline: none;
-        line-height: 1rem;
-        height: auto;
-        /* Altura automática */
-        min-height: 100px;
-        /* Altura mínima */
-        overflow-y: hidden;
-        /* Esconde a barra de rolagem */
+        line-height: 1.5rem;
+        min-width: 100%;
     }
 
     #copia{
@@ -358,5 +364,9 @@ textarea {
         flex-direction: column;
         justify-content: center;
         padding-top: 20px;
+    }
+
+    .rodape__credito{
+        font-size: 1rem;
     }
 }

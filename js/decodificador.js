@@ -69,15 +69,16 @@ function descriptografar(texto) {
 function descriptografarTexto() {
     // chama a função descriptografar, e colocar o valor descriptografado no textarea.
     let input = document.querySelector("#adicionar_texto").value;
+    let textarea = document.querySelector("#decodificador_texto");
 
     if (input === "") {
         alert("Por favor, insira um texto criptografado para ser descriptografado.");
         restalrarTags()
         textarea.value = ""
         removerTag("copiar", "#copia")
+        return;
     }
 
-    let textarea = document.querySelector("#decodificador_texto");
     input = descriptografar(input);
     textarea.value = input
     removerTag("subtitulo", "#subtitulo")
@@ -105,8 +106,9 @@ function restalrarTags() {
 
     }
     else {
-        removerTag("subtitulo", "#subtitulo")
         removerTag("imagem", "#img_garoto")
+        let subtitulo = document.querySelector("#subtitulo")
+        subtitulo.style.display = "flex"
     }
     
 }
